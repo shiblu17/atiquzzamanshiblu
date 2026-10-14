@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --stage-black: #0E0E10;
+    --stage-surface: #1A1A1E;
+    --stage-surface-light: #24242B;
+    --primary-text: #F4EFE6;
+    --text-muted: #9E9AA0;
+    --accent-red: #B3122D;
+    --accent-glow: #E63550;
+    --stage-gold: #C9A24B;
+    --stage-gold-bright: #F5D37C;
+    --tech-cyan: #4CC9F0;
+    --tech-blue: #0077B6;
+    --house-light: 0;
+  }
+
+  body {
+    background-color: var(--stage-black);
+    color: var(--primary-text);
+    font-family: 'Inter', 'Hind Siliguri', sans-serif;
+    transition: background-color 0.5s ease;
+  }
+
+  body.house-lights-on {
+    background-color: #242220 !important;
+    --stage-black: #242220;
+    --stage-surface: #363330;
+    --primary-text: #FFFDF9;
+  }
+}
+
+.font-serif-drama {
+  font-family: 'Playfair Display', 'Noto Serif Bengali', serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', 'Noto Serif Bengali', serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-bangla {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0E0E10;
+}
+::-webkit-scrollbar-thumb {
+  background: #2D2D35;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B3122D;
+}
+
+/* Theatrical ticket perforations */
+.ticket-edge-left {
+  position: relative;
+}
+.ticket-edge-left::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-color: var(--stage-black);
+  border-radius: 50%;
+}
+
+.ticket-edge-right {
+  position: relative;
+}
+.ticket-edge-right::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-color: var(--stage-black);
+  border-radius: 50%;
+}
+
+/* Spotlight glow effect */
+.spotlight-glow {
+  background: radial-gradient(circle at center, rgba(201, 162, 75, 0.15) 0%, rgba(201, 162, 75, 0.03) 40%, transparent 70%);
+}
+
+.spotlight-red {
+  background: radial-gradient(circle at center, rgba(230, 53, 80, 0.2) 0%, rgba(179, 18, 45, 0.05) 50%, transparent 75%);
+}
+
+.spotlight-cyan {
+  background: radial-gradient(circle at center, rgba(76, 201, 240, 0.18) 0%, rgba(0, 119, 182, 0.04) 50%, transparent 75%);
+}
+
+/* Ghost light flicker animation */
+@keyframes ghostFlicker {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 16px rgba(245, 211, 124, 0.9)); }
+  3% { opacity: 0.75; }
+  6% { opacity: 1; }
+  7% { opacity: 0.5; }
+  8% { opacity: 0.95; }
+  9% { opacity: 0.65; }
+  10% { opacity: 1; }
+  89% { opacity: 1; }
+  90% { opacity: 0.8; }
+  91% { opacity: 1; }
+}
+
+.animate-ghost-light {
+  animation: ghostFlicker 6s infinite;
+}
+
+/* Glassmorphism panel */
+.stage-glass {
+  background: rgba(26, 26, 30, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stage-glass-gold {
+  background: rgba(26, 26, 30, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(201, 162, 75, 0.25);
+  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.6);
+}
