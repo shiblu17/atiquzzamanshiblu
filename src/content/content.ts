@@ -184,49 +184,49 @@ export const leadershipData: LeadershipItem[] = [
   {
     id: 'tsc-newspaper',
     title: {
-      en: 'President, "Songskrriti Nagar" Newspaper',
-      bn: 'সভাপতি, "সংস্কৃতি নগর" (টিএসসি-অনুমোদিত পত্রিকা)'
+      en: 'President, "Songskrriti Nagar"',
+      bn: 'সভাপতি, "সংস্কৃতি নগর"'
     },
     organization: {
       en: 'Teacher-Student Centre (TSC), Jahangirnagar University',
       bn: 'ছাত্র-শিক্ষক কেন্দ্র (টিএসসি), জাহাঙ্গীরনগর বিশ্ববিদ্যালয়'
     },
     role: {
-      en: 'President & Editor-in-Chief',
-      bn: 'সভাপতি ও প্রধান সম্পাদক'
+      en: 'President & Publication Lead',
+      bn: 'সভাপতি ও প্রকাশনা সমন্বয়ক'
     },
     period: '2023 - Present',
     description: {
-      en: 'Directing the editorial policy, investigative reporting, digital publication, and print distribution for Jahangirnagar University\'s prominent TSC-affiliated media publication "Songskrriti Nagar".',
-      bn: 'জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ের ঐতিহ্যবাহী টিএসসি-অনুমোদিত পত্রিকা "সংস্কৃতি নগর"-এর সার্বিক নেতৃত্ব, বস্তুনিষ্ঠ সাংবাদিকতা, প্রিন্ট ও ডিজিটাল প্রকাশনার পরিকল্পনা ও সমন্বয়।'
+      en: 'Directing publication management, editorial curation, design layout, and print circulation for Jahangirnagar University\'s prominent TSC-affiliated cultural magazine "Songskrriti Nagar".',
+      bn: 'জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ের ঐতিহ্যবাহী টিএসসি-অনুমোদিত সাংস্কৃতিক পত্রিকা "সংস্কৃতি নগর"-এর সার্বিক প্রকাশনা ব্যবস্থাপনা, লেখা সংগ্রহ, প্রচ্ছদ অলঙ্করণ ও বিতরণ কার্যক্রমের সমন্বয়।'
     },
     metrics: [
       {
-        label: { en: 'Readership Reached', bn: 'পাঠক সংযোগ' },
+        label: { en: 'Readership & Campus Reach', bn: 'পাঠক সংযোগ' },
         value: 18000,
         suffix: '+'
       },
       {
-        label: { en: 'Investigative Issues Published', bn: 'প্রকাশিত সংখ্যা' },
+        label: { en: 'Publication Issues Printed', bn: 'প্রকাশিত সংখ্যা' },
         value: 14,
         suffix: ' Issues'
       },
       {
-        label: { en: 'Staff Journalists & Writers', bn: 'প্রতিবেদক ও লেখক' },
+        label: { en: 'Contributors & Creative Team', bn: 'লেখক ও প্রকাশনা সহযোগী' },
         value: 35,
         suffix: '+'
       }
     ],
     responsibilities: {
       en: [
-        'Formulated ethical reporting guidelines, verifying source integrity on university administrative matters.',
-        'Mentored junior journalists in news writing, photojournalism, and layout design.',
-        'Modernized workflow with digital newsdesk pipelines, cloud storage, and automated social distribution.'
+        'Coordinated publication timelines, literary essay curation, and departmental distribution across campus.',
+        'Supervised magazine layout aesthetics, cover illustrations, and print production pipelines.',
+        'Cultivated a welcoming platform for student cultural voices, creative discourse, and team mentorship.'
       ],
       bn: [
-        'দায়িত্বশীল ও অনুসন্ধানী সাংবাদিকতার নীতিমালা প্রণয়ন এবং সংবাদের নির্ভরযোগ্যতা নিশ্চিতকরণ।',
-        'তরুণ সংবাদকর্মী ও লেখকদের ফিচার লেখা, সম্পাদনা ও লেআউট ডিজাইনের প্রশিক্ষণ প্রদান।',
-        'ডিজিটাল নিউজডেস্ক ব্যবস্থা চালু করে প্রতিবেদন সংগ্রহ ও দ্রুত প্রকাশের আধুনিক রূপরেখা বাস্তবায়ন।'
+        'ক্যাম্পাসজুড়ে নিয়মিত প্রকাশনা সময়সূচি, সাহিত্য ও মুক্তচিন্তার লেখা সংগ্রহ এবং সুষ্ঠু বিতরণ ব্যবস্থাপনা।',
+        'পত্রিকার দৃষ্টিনন্দন লেআউট, প্রচ্ছদ পরিকল্পনা ও প্রিন্টিং প্রেস সমন্বয়।',
+        'শিক্ষার্থীদের সৃজনশীল লেখালেখি ও সাংস্কৃতিক ভাবনা প্রকাশের জন্য একটি গতিশীল টিম পরিচালনা।'
       ]
     }
   },
@@ -373,7 +373,7 @@ export const skillNodesData: SkillNode[] = [
   { id: 'script-editing', name: 'Script Editing & Adaptation', category: 'theatre', level: 86, usedIn: { en: 'Tagore & Contemporary Adaptations', bn: 'নাট্যপাঠ সম্পাদনা' }, position: [-3.2, 0.8, -0.2] },
 
   // Leadership Skills
-  { id: 'editorial', name: 'Editorial Leadership & Journalism', category: 'leadership', level: 94, usedIn: { en: 'Songskrriti Nagar Newspaper', bn: 'সংস্কৃতি নগর পত্রিকা' }, position: [0.2, 2.3, 0.8] },
+  { id: 'editorial', name: 'Publication & Editorial Direction', category: 'leadership', level: 94, usedIn: { en: 'Songskrriti Nagar Publication', bn: 'সংস্কৃতি নগর প্রকাশনা' }, position: [0.2, 2.3, 0.8] },
   { id: 'event-production', name: 'Mega Event Management', category: 'leadership', level: 95, usedIn: { en: 'JUCSU Run 2026 (2,500+ Runners)', bn: 'জাকসু রান ও ব্যাচ ফেস্টিভ্যাল' }, position: [0.0, 1.1, -0.8] },
   { id: 'sponsorship', name: 'Sponsorship & Corporate Outreach', category: 'leadership', level: 89, usedIn: { en: '12+ Brand Partnerships', bn: '১২+ করপোরেট স্পন্সর চুক্তি' }, position: [0.6, -0.5, 0.9] },
   { id: 'team-coordination', name: 'Cross-Functional Team Direction', category: 'leadership', level: 92, usedIn: { en: '85+ Member Volunteer Squad', bn: '৮৫ সদস্যের ভলান্টিয়ার টিম' }, position: [-0.4, -1.8, 0.3] },

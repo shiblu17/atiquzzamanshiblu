@@ -40,7 +40,7 @@ export const CurtainCall: React.FC<CurtainCallProps> = ({ lang }) => {
     { value: 'Collaboration', label: { en: 'Theatrical Collaboration / Direction', bn: 'নাট্য সহযোগিতা ও নির্দেশনা' } },
     { value: 'Scholarship', label: { en: 'Scholarship & Academia (Dublin / Galway)', bn: 'স্কলারশিপ ও গবেষণা (ডাবলিন / গ্যালওয়ে)' } },
     { value: 'Tech', label: { en: 'Web Engineering & Automation Project', bn: 'ওয়েব ইঞ্জিনিয়ারিং ও অটোমেশন' } },
-    { value: 'Press', label: { en: 'Media, Press & Editorial Inquiries', bn: 'গণমাধ্যম ও প্রেস যোগাযোগ' } },
+    { value: 'Publications', label: { en: 'Campus Culture & Publication Inquiries', bn: 'সাংস্কৃতিক প্রকাশনা ও সাধারণ যোগাযোগ' } },
   ];
 
   return (
@@ -194,7 +194,7 @@ export const CurtainCall: React.FC<CurtainCallProps> = ({ lang }) => {
             className="group block relative p-4 rounded-2xl bg-[#1A1A22] border border-[#C9A24B]/30 hover:border-[#C9A24B] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg shadow-black ticket-edge-left"
           >
             <div className="flex items-center justify-between text-xs font-mono-code text-[#C9A24B] mb-1">
-              <span>ADMIT ONE · PRESS PASS</span>
+              <span>ADMIT ONE · BACKSTAGE PASS</span>
               <span className="font-bold">#JU52-DRAMA</span>
             </div>
             <h4 className="font-bold text-white text-sm group-hover:text-[#F5D37C] transition-colors">

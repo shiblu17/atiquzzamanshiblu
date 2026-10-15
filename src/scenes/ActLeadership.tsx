@@ -21,15 +21,15 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
       <div className="text-center mb-16">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full stage-glass border border-[#C9A24B]/50 text-xs font-mono-code text-[#F5D37C] mb-3">
           <span className="w-2 h-2 rounded-full bg-[#C9A24B]" />
-          <span>{lang === 'en' ? 'Act II · Editorial Voice & Public Scale' : '২য় অঙ্ক · ক্যাম্পাস নেতৃত্ব, সাংবাদিকতা ও উৎসব'}</span>
+          <span>{lang === 'en' ? 'Act II · Leadership, Publications & Events' : '২য় অঙ্ক · ক্যাম্পাস নেতৃত্ব, প্রকাশনা ও উৎসব'}</span>
         </div>
         <h2 className="font-serif-drama text-3xl sm:text-5xl md:text-6xl text-white mb-4">
-          {lang === 'en' ? 'Leadership, Journalism & Events' : 'নেতৃত্ব, গণমাধ্যম ও ইভেন্ট ব্যবস্থাপনা'}
+          {lang === 'en' ? 'Leadership, Publications & Events' : 'নেতৃত্ব, প্রকাশনা ও ইভেন্ট ব্যবস্থাপনা'}
         </h2>
         <p className="max-w-2xl mx-auto text-sm sm:text-base text-[#9E9AA0] font-sans">
           {lang === 'en'
-            ? 'Presidential editorial governance at Jahangirnagar University, investigative press pipelines, and directing large-scale university festivals with thousands of participants.'
-            : 'জাহাঙ্গীরনগর বিশ্ববিদ্যালয় টিএসসি পত্রিকার নেতৃত্ব, অনুসন্ধানী সাংবাদিকতা এবং হাজারো শিক্ষার্থীর অংশগ্রহণে জাকসু রান ও সেন্ট্রাল ব্যাচ ফেস্টিভ্যালের সফল সমন্বয়।'}
+            ? 'Presidential stewardship of the cultural magazine "Songskrriti Nagar" at Jahangirnagar University, coordinating creative teams, and organizing flagship campus festivals with thousands of participants.'
+            : 'জাহাঙ্গীরনগর বিশ্ববিদ্যালয় টিএসসি সাংস্কৃতিক পত্রিকা "সংস্কৃতি নগর"-এর নেতৃত্ব, লেখক ও প্রকাশনা দলের সমন্বয় এবং হাজারো শিক্ষার্থীর অংশগ্রহণে জাকসু রান ও সেন্ট্রাল ব্যাচ ফেস্টিভ্যালের সফল আয়োজন।'}
         </p>
       </div>
 
@@ -47,7 +47,7 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
           }`}
         >
           <Newspaper className="w-4 h-4" />
-          <span>{lang === 'en' ? '3D Newspaper (Campus Press)' : '৩ডি সংবাদপত্র (ক্যাম্পাস প্রেস)'}</span>
+          <span>{lang === 'en' ? '3D Publication (Songskrriti Nagar)' : '৩ডি প্রকাশনা (সংস্কৃতি নগর)'}</span>
         </button>
 
         <button
@@ -118,13 +118,13 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
                 /* Page Front: Lead Story & Editorial */
                 <div>
                   <div className="inline-block px-2.5 py-0.5 bg-[#8C1D40] text-white font-mono-code text-[11px] uppercase tracking-wider mb-2 font-bold">
-                    PRESIDENTIAL EDITORIAL DESK
+                    PRESIDENTIAL PUBLICATION DESK
                   </div>
 
                   <h4 className="font-serif-drama text-xl sm:text-2xl font-bold leading-tight mb-2 text-black">
                     {lang === 'en'
-                      ? 'Transforming Student Media: Ethical Journalism & Digital Archives'
-                      : 'ছাত্র সাংবাদিকতার রূপান্তর: বস্তুনিষ্ঠ সংবাদ ও ডিজিটাল মহাফেজখানা'}
+                      ? 'Nurturing Campus Culture: Student Voices & Creative Publications'
+                      : 'ক্যাম্পাস সংস্কৃতি ও সৃজনশীল সাহিত্য প্রকাশনা সমন্বয়'}
                   </h4>
 
                   <p className="text-xs sm:text-sm font-serif-drama leading-relaxed text-black/85 mb-4 columns-1 sm:columns-2 gap-4">
@@ -141,14 +141,14 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
                   </div>
                 </div>
               ) : (
-                /* Page Back: Investigation & Published Issues */
+                /* Page Back: Publication & Impact */
                 <div className="transform rotate-y-180">
                   <div className="inline-block px-2.5 py-0.5 bg-black text-white font-mono-code text-[11px] uppercase tracking-wider mb-3 font-bold">
-                    PAGE 2 · INVESTIGATIVE DOSSIER
+                    PAGE 2 · PUBLICATION & EDITORIAL HIGHLIGHTS
                   </div>
 
                   <h4 className="font-serif-drama text-lg sm:text-xl font-bold mb-3 text-black">
-                    {lang === 'en' ? 'Key Editorial Responsibilities & Impact' : 'দায়িত্ব ও সম্পাদনা অর্জন'}
+                    {lang === 'en' ? 'Key Leadership Responsibilities & Impact' : 'দায়িত্ব ও প্রকাশনা অর্জন'}
                   </h4>
 
                   <ul className="space-y-2 mb-6">
@@ -204,12 +204,12 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
 
             <div className="p-5 rounded-2xl stage-glass border border-white/10 mt-4">
               <h4 className="text-xs font-mono-code uppercase tracking-wider text-[#C9A24B] mb-2 font-bold">
-                {lang === 'en' ? 'Journalistic Core Competencies' : 'সাংবাদিকতার মূল ভিত্তি'}
+                {lang === 'en' ? 'Publication & Leadership Competencies' : 'প্রকাশনা ও সাংগঠনিক ভিত্তি'}
               </h4>
               <p className="text-xs sm:text-sm text-[#F4EFE6]/80 leading-relaxed">
                 {lang === 'en'
-                  ? 'Fostered a vibrant community of campus investigative writers, instituted digital newsroom automation tools, and maintained rigorous fact-checking standards across all university reporting.'
-                  : 'বিশ্ববিদ্যালয়ের বস্তুনিষ্ঠ সাংবাদিকতার ধারা সমুন্নত রাখা, নবীন লেখকদের হাতে-কলমে প্রশিক্ষণ এবং আধুনিক ডিজিটাল নিউজরুম ব্যবস্থার বাস্তবায়ন।'}
+                  ? 'Orchestrated student cultural publications, guided creative layout aesthetics, managed print press schedules, and connected campus writers with university readers.'
+                  : 'ক্যাম্পাসভিত্তিক সাংস্কৃতিক প্রকাশনা সমন্বয়, দৃষ্টিনন্দন প্রচ্ছদ ও লেআউট পরিকল্পনা, ছাপাখানা পরিচালনা এবং নবীন লেখকদের সৃজনশীল চিন্তার বিকাশ সাধন।'}
               </p>
             </div>
           </div>
@@ -338,7 +338,7 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
               <g transform="translate(460, 90)">
                 <circle r="30" fill="#1A1A22" stroke="#E63550" strokeWidth="2" />
                 <text textAnchor="middle" y="-2" fill="#FFF" fontSize="10" fontWeight="bold">35 Writers</text>
-                <text textAnchor="middle" y="12" fill="#E63550" fontSize="8" fontFamily="monospace">Newsdesk</text>
+                <text textAnchor="middle" y="12" fill="#E63550" fontSize="8" fontFamily="monospace">Editorial</text>
               </g>
 
               {/* Node 4: Volunteer Operations */}
