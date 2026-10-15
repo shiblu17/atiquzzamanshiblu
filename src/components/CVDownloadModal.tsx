@@ -30,7 +30,7 @@ export const CVDownloadModal: React.FC<CVDownloadModalProps> = ({ isOpen, onClos
     const content = `==================================================================
 CURRICULUM VITAE: ATIQUZZAMAN SHIBLU
 Department of Drama & Dramatic Theory, Jahangirnagar University (52nd Batch)
-President, TSC-Affiliated Campus Newspaper
+President, "Songskrriti Nagar" (TSC-Affiliated Newspaper)
 Target Objective: Master's in Theatre Studies & Performance (Trinity College Dublin / University of Galway)
 Contact: atiquzzaman.shiblu.ju@gmail.com | github.com/atiquzzaman-shiblu
 ==================================================================
@@ -52,7 +52,7 @@ Contact: atiquzzaman.shiblu.ju@gmail.com | github.com/atiquzzaman-shiblu
   Role: Lead Scenographer & Scale Modeller (Blender 3D + Handcrafted Balsa & Etched Brass)
 
 3. EDITORIAL LEADERSHIP & CAMPUS GOVERNANCE
-- President & Editor-in-Chief, TSC-Affiliated Campus Newspaper
+- President & Editor-in-Chief, "Songskrriti Nagar" (TSC Newspaper)
   Led 35 staff journalists, published 14 investigative issues, reached 18,000+ readers.
 - Chief Event Convener, JUCSU Run 2026 & Batch Day Festival
   Coordinated 2,500+ runners, 12 corporate brand sponsors, 85-member volunteer operations squad.

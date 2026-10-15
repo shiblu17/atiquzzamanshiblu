@@ -184,8 +184,8 @@ export const leadershipData: LeadershipItem[] = [
   {
     id: 'tsc-newspaper',
     title: {
-      en: 'President, Campus Newspaper',
-      bn: 'সভাপতি, টিএসসি-অনুমোদিত সংবাদপত্র'
+      en: 'President, "Songskrriti Nagar" Newspaper',
+      bn: 'সভাপতি, "সংস্কৃতি নগর" (টিএসসি-অনুমোদিত পত্রিকা)'
     },
     organization: {
       en: 'Teacher-Student Centre (TSC), Jahangirnagar University',
@@ -197,8 +197,8 @@ export const leadershipData: LeadershipItem[] = [
     },
     period: '2023 - Present',
     description: {
-      en: 'Directing the editorial policy, investigative reporting, digital publication, and print distribution for Jahangirnagar University\'s prominent TSC-affiliated media organization.',
-      bn: 'জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ের ঐতিহ্যবাহী টিএসসি-অনুমোদিত সংবাদপত্রের সার্বিক নেতৃত্ব, বস্তুনিষ্ঠ সাংবাদিকতা, প্রিন্ট ও ডিজিটাল প্রকাশনার পরিকল্পনা ও সমন্বয়।'
+      en: 'Directing the editorial policy, investigative reporting, digital publication, and print distribution for Jahangirnagar University\'s prominent TSC-affiliated media publication "Songskrriti Nagar".',
+      bn: 'জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ের ঐতিহ্যবাহী টিএসসি-অনুমোদিত পত্রিকা "সংস্কৃতি নগর"-এর সার্বিক নেতৃত্ব, বস্তুনিষ্ঠ সাংবাদিকতা, প্রিন্ট ও ডিজিটাল প্রকাশনার পরিকল্পনা ও সমন্বয়।'
     },
     metrics: [
       {
@@ -373,7 +373,7 @@ export const skillNodesData: SkillNode[] = [
   { id: 'script-editing', name: 'Script Editing & Adaptation', category: 'theatre', level: 86, usedIn: { en: 'Tagore & Contemporary Adaptations', bn: 'নাট্যপাঠ সম্পাদনা' }, position: [-3.2, 0.8, -0.2] },
 
   // Leadership Skills
-  { id: 'editorial', name: 'Editorial Leadership & Journalism', category: 'leadership', level: 94, usedIn: { en: 'TSC-Affiliated Newspaper', bn: 'টিএসসি অনুমোদিত সংবাদপত্র' }, position: [0.2, 2.3, 0.8] },
+  { id: 'editorial', name: 'Editorial Leadership & Journalism', category: 'leadership', level: 94, usedIn: { en: 'Songskrriti Nagar Newspaper', bn: 'সংস্কৃতি নগর পত্রিকা' }, position: [0.2, 2.3, 0.8] },
   { id: 'event-production', name: 'Mega Event Management', category: 'leadership', level: 95, usedIn: { en: 'JUCSU Run 2026 (2,500+ Runners)', bn: 'জাকসু রান ও ব্যাচ ফেস্টিভ্যাল' }, position: [0.0, 1.1, -0.8] },
   { id: 'sponsorship', name: 'Sponsorship & Corporate Outreach', category: 'leadership', level: 89, usedIn: { en: '12+ Brand Partnerships', bn: '১২+ করপোরেট স্পন্সর চুক্তি' }, position: [0.6, -0.5, 0.9] },
   { id: 'team-coordination', name: 'Cross-Functional Team Direction', category: 'leadership', level: 92, usedIn: { en: '85+ Member Volunteer Squad', bn: '৮৫ সদস্যের ভলান্টিয়ার টিম' }, position: [-0.4, -1.8, 0.3] },

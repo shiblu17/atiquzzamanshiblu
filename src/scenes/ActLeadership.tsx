@@ -107,10 +107,10 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
                   <span>EST. TSC BANGLADESH</span>
                 </div>
                 <h3 className="font-serif-drama text-3xl sm:text-5xl font-black uppercase tracking-tight text-black leading-none">
-                  THE CAMPUS CHRONICLE
+                  SONGSKRRITI NAGAR
                 </h3>
                 <p className="text-[11px] font-serif-drama italic text-black/75 mt-1">
-                  "The Voice of Inquisitive Youth, Academic Autonomy & Cultural Staging"
+                  "সংস্কৃতি নগর · The Voice of Cultural Staging, Youth Discourse & Academic Autonomy"
                 </p>
               </div>
 

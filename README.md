@@ -4,7 +4,7 @@
 
 **Owner:** Atiquzzaman Shiblu  
 **Education:** Department of Drama & Dramatic Theory, Jahangirnagar University (52nd Batch)  
-**Leadership:** President, TSC-Affiliated Campus Newspaper  
+**Leadership:** President, "Songskrriti Nagar" (TSC-Affiliated Newspaper)  
 **Target:** Master's in Theatre Studies / Performance (Trinity College Dublin, University of Galway)  
 
 ---
@@ -27,7 +27,7 @@ This portfolio is structured around a three-act theatrical journey with a persis
   - *Bangladesh Shilpakala Academy:* Hanging stage flats detailing national repertory festival collaborations.
   - **1:12 Miniature Stage Set (Signature Showpiece):** Fully interactive 3D WebGL model of the vintage chemistry laboratory set. Allows 360° orbit, zoom, and an animated **"Exploded View"** decomposing the set components (fume extraction hood, distillation retort flasks, timber rostrum, formula blackboard, and test tube racks).
 - **Act II — Leadership, Journalism & Events:**
-  - *TSC-Affiliated Newspaper:* 3D newspaper page that unfolds and flips to reveal editorial governance, investigative reporting, and 14 archived issues.
+  - *"Songskrriti Nagar" (সংস্কৃতি নগর):* 3D newspaper page that unfolds and flips to reveal editorial governance, investigative reporting, and 14 archived issues.
   - *JUCSU Run 2026 & Batch Day Festival:* Event cards with verified counts: 2,500+ runners, 12 corporate brand sponsors, and 85 volunteer operations personnel.
   - *Stakeholder Node Graph:* Interactive coordination diagram showing links between leadership, university administration, media writers, sponsors, and logistics teams.
 - **Act III — Technology & Automation:**
