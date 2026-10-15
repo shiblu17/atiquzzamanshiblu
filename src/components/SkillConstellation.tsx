@@ -157,9 +157,41 @@ export const SkillConstellation: React.FC<SkillConstellationProps> = ({ lang }) 
       isDragging = false;
     };
 
+    // Mobile touch interaction & tap selection
+    const onTouchStart = (e: TouchEvent) => {
+      if (e.touches.length === 1) {
+        isDragging = true;
+        prev = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+
+        const rect = renderer.domElement.getBoundingClientRect();
+        mouse.x = ((e.touches[0].clientX - rect.left) / rect.width) * 2 - 1;
+        mouse.y = -((e.touches[0].clientY - rect.top) / rect.height) * 2 + 1;
+        raycaster.setFromCamera(mouse, camera);
+        const intersects = raycaster.intersectObjects(nodeMeshes.map((n) => n.mesh));
+        if (intersects.length > 0) {
+          const found = nodeMeshes.find((n) => n.mesh === intersects[0].object);
+          if (found) setSelectedNode(found.data);
+        }
+      }
+    };
+    const onTouchMove = (e: TouchEvent) => {
+      if (!isDragging || e.touches.length !== 1) return;
+      const dx = e.touches[0].clientX - prev.x;
+      const dy = e.touches[0].clientY - prev.y;
+      constellationGroup.rotation.y += dx * 0.008;
+      constellationGroup.rotation.x += dy * 0.008;
+      prev = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    };
+    const onTouchEnd = () => {
+      isDragging = false;
+    };
+
     dom.addEventListener('mousedown', onMouseDown);
     window.addEventListener('mousemove', onMouseMove);
     window.addEventListener('mouseup', onMouseUp);
+    dom.addEventListener('touchstart', onTouchStart, { passive: true });
+    dom.addEventListener('touchmove', onTouchMove, { passive: true });
+    dom.addEventListener('touchend', onTouchEnd);
 
     // Render loop
     let animId: number;
@@ -192,6 +224,9 @@ export const SkillConstellation: React.FC<SkillConstellationProps> = ({ lang }) 
       dom.removeEventListener('mousedown', onMouseDown);
       window.removeEventListener('mousemove', onMouseMove);
       window.removeEventListener('mouseup', onMouseUp);
+      dom.removeEventListener('touchstart', onTouchStart);
+      dom.removeEventListener('touchmove', onTouchMove);
+      dom.removeEventListener('touchend', onTouchEnd);
       renderer.dispose();
     };
   }, [showListView]);

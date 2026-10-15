@@ -4,7 +4,6 @@ import { TheatreCanvas } from './components/TheatreCanvas';
 import { Navbar } from './components/Navbar';
 import { CustomCursor } from './components/CustomCursor';
 import { SceneDetailModal } from './components/SceneDetailModal';
-import { CVDownloadModal } from './components/CVDownloadModal';
 import { HeroScene } from './scenes/HeroScene';
 import { ActTheatre } from './scenes/ActTheatre';
 import { ActLeadership } from './scenes/ActLeadership';
@@ -23,7 +22,6 @@ export function App() {
   const [ghostLightOn, setGhostLightOn] = useState(true);
   const [is3DFallback, setIs3DFallback] = useState(false);
   const [selectedDetail, setSelectedDetail] = useState<ProductionItem | TechProject | null>(null);
-  const [isCVModalOpen, setIsCVModalOpen] = useState(false);
 
   // Keyboard shortcut listener (PRD Feature F13: pressing 'G' toggles ghost light)
   useEffect(() => {
@@ -142,7 +140,6 @@ export function App() {
             lang={lang}
             onExplore={() => scrollToScene(2)}
             onContact={() => scrollToScene(6)}
-            onDownloadCV={() => setIsCVModalOpen(true)}
           />
         </div>
 
@@ -162,7 +159,6 @@ export function App() {
 
         <Epilogue
           lang={lang}
-          onDownloadCV={() => setIsCVModalOpen(true)}
         />
 
         <CurtainCall
@@ -174,13 +170,6 @@ export function App() {
       <SceneDetailModal
         item={selectedDetail}
         onClose={() => setSelectedDetail(null)}
-        lang={lang}
-      />
-
-      {/* CV Download / Academic Dossier Modal (PRD Feature F9) */}
-      <CVDownloadModal
-        isOpen={isCVModalOpen}
-        onClose={() => setIsCVModalOpen(false)}
         lang={lang}
       />
     </div>

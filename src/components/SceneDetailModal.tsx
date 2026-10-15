@@ -27,21 +27,21 @@ export const SceneDetailModal: React.FC<SceneDetailModalProps> = ({ item, onClos
     <div
       role="dialog"
       aria-modal="true"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-md animate-fadeIn overflow-y-auto"
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/90 backdrop-blur-md animate-fadeIn"
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-3xl my-8 p-6 sm:p-8 rounded-3xl stage-glass-gold border border-[#C9A24B]/40 text-left text-[#F4EFE6] shadow-2xl overflow-hidden"
+        className="relative w-full max-w-3xl max-h-[88vh] overflow-y-auto my-auto p-5 sm:p-8 rounded-2xl sm:rounded-3xl stage-glass-gold border border-[#C9A24B]/40 text-left text-[#F4EFE6] shadow-2xl scrollbar-thin"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Accent Light Bar */}
-        <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-[#B3122D] via-[#C9A24B] to-[#4CC9F0]" />
+        <div className="sticky -top-5 sm:-top-8 -mx-5 sm:-mx-8 h-1.5 bg-gradient-to-r from-[#B3122D] via-[#C9A24B] to-[#4CC9F0] z-20" />
 
         {/* Close Button */}
         <button
           onClick={onClose}
           aria-label="Close details"
-          className="absolute top-5 right-5 p-2 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 text-white/80 hover:text-white transition-all cursor-pointer"
+          className="absolute top-4 right-4 z-20 p-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-white/90 hover:text-white transition-all cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>

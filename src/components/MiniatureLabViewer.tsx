@@ -355,8 +355,8 @@ export const MiniatureLabViewer: React.FC<MiniatureLabViewerProps> = ({ lang }) 
     window.addEventListener('mousemove', onMouseMove);
     window.addEventListener('mouseup', onMouseUp);
     domElement.addEventListener('wheel', onWheel, { passive: false });
-    domElement.addEventListener('touchstart', onTouchStart, { passive: false });
-    domElement.addEventListener('touchmove', onTouchMove, { passive: false });
+    domElement.addEventListener('touchstart', onTouchStart, { passive: true });
+    domElement.addEventListener('touchmove', onTouchMove, { passive: true });
     domElement.addEventListener('touchend', onTouchEnd);
 
     // Animation Loop
@@ -408,7 +408,7 @@ export const MiniatureLabViewer: React.FC<MiniatureLabViewerProps> = ({ lang }) 
   }, []);
 
   return (
-    <div className="relative w-full h-[520px] sm:h-[600px] rounded-2xl overflow-hidden border border-[#C9A24B]/30 bg-[#0E0E12] shadow-2xl">
+    <div className="relative w-full h-[380px] sm:h-[540px] rounded-2xl overflow-hidden border border-[#C9A24B]/30 bg-[#0E0E12] shadow-2xl touch-pan-y">
       {/* 3D WebGL Canvas Container */}
       <div ref={containerRef} className="w-full h-full cursor-grab active:cursor-grabbing" />
 
@@ -418,17 +418,17 @@ export const MiniatureLabViewer: React.FC<MiniatureLabViewerProps> = ({ lang }) 
           <span className="w-2 h-2 rounded-full bg-[#E63550] animate-ping" />
           <span>{lang === 'en' ? '1:12 Architectural Stage Set' : '১:১২ স্কেল স্থাপত্য মঞ্চ মডেল'}</span>
         </div>
-        <p className="text-white text-sm font-serif-drama tracking-wide">
+        <p className="text-white text-xs sm:text-sm font-serif-drama tracking-wide">
           {lang === 'en' ? 'Vintage Chemistry Laboratory' : 'ভিন্টেজ রসায়ন গবেষণাগার'}
         </p>
       </div>
 
       {/* Control Buttons (Exploded View, Zoom, Reset) */}
-      <div className="absolute bottom-4 left-4 right-4 z-10 flex flex-wrap items-center justify-between gap-3 pointer-events-auto">
+      <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 z-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2 pointer-events-auto">
         {/* Exploded View Toggle (PRD Requirement A7 & Acceptance Criteria 3) */}
         <button
           onClick={() => setExploded(!exploded)}
-          className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300 shadow-lg cursor-pointer ${
+          className={`flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300 shadow-lg cursor-pointer ${
             exploded
               ? 'bg-[#B3122D] text-white border border-[#E63550] shadow-[#B3122D]/40'
               : 'bg-black/85 text-[#F4EFE6] border border-[#C9A24B]/50 hover:bg-[#C9A24B] hover:text-black'
@@ -439,7 +439,7 @@ export const MiniatureLabViewer: React.FC<MiniatureLabViewerProps> = ({ lang }) 
         </button>
 
         {/* Orbit & Zoom Hint */}
-        <div className="flex items-center gap-2 bg-black/75 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-[11px] text-[#F4EFE6]/70 font-mono-code">
+        <div className="flex items-center justify-center gap-2 bg-black/75 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-[10px] sm:text-[11px] text-[#F4EFE6]/70 font-mono-code">
           <Eye className="w-3.5 h-3.5 text-[#C9A24B]" />
           <span>{lang === 'en' ? 'Drag to Orbit · Scroll to Zoom' : 'ঘোরাতে ড্র্যাগ করুন · জুম করতে স্ক্রোল করুন'}</span>
         </div>
@@ -447,17 +447,17 @@ export const MiniatureLabViewer: React.FC<MiniatureLabViewerProps> = ({ lang }) 
 
       {/* Exploded View Labels Overlay when exploded */}
       {exploded && (
-        <div className="absolute top-16 right-4 z-10 hidden sm:flex flex-col gap-2 max-w-xs p-3 bg-black/80 backdrop-blur-md border border-[#C9A24B]/30 rounded-xl text-xs text-[#F4EFE6]">
-          <div className="flex items-center gap-1.5 font-semibold text-[#C9A24B]">
+        <div className="absolute top-16 right-3 sm:right-4 z-10 flex flex-col gap-1.5 max-w-[240px] sm:max-w-xs p-2.5 sm:p-3 bg-black/85 backdrop-blur-md border border-[#C9A24B]/30 rounded-xl text-xs text-[#F4EFE6] animate-fadeIn">
+          <div className="flex items-center gap-1.5 font-semibold text-[#C9A24B] text-[11px] sm:text-xs">
             <Info className="w-3.5 h-3.5" />
             <span>{lang === 'en' ? 'Exploded Components' : 'দৃশ্যপট উপাদানসমূহ'}</span>
           </div>
-          <ul className="space-y-1 text-[11px] text-[#F4EFE6]/80 list-disc list-inside">
-            <li>{lang === 'en' ? 'Copper extraction fume hood & exhaust pipe' : 'তামার ফিউম হুড ও এক্সহস্ট পাইপ'}</li>
-            <li>{lang === 'en' ? 'Distillation retort glassware & test tube rack' : 'পাতন ফ্লাস্ক ও বিকার গ্লাসওয়্যার'}</li>
+          <ul className="space-y-1 text-[10px] sm:text-[11px] text-[#F4EFE6]/80 list-disc list-inside">
+            <li>{lang === 'en' ? 'Copper extraction fume hood' : 'তামার ফিউম হুড ও পাইপ'}</li>
+            <li>{lang === 'en' ? 'Distillation retort glassware' : 'পাতন ফ্লাস্ক ও বিকার'}</li>
             <li>{lang === 'en' ? 'Turned-leg oak lab workbench' : 'ওক কাঠের রসায়ন টেবিল'}</li>
-            <li>{lang === 'en' ? 'Formula blackboard & staging notation' : 'চকবোর্ড ও নাট্য মহড়া নোট'}</li>
-            <li>{lang === 'en' ? 'Weathered pine rostrum & distressed brick flats' : 'রোস্ট্রাম ও পেছনের পোড়া ইটের দেয়াল'}</li>
+            <li>{lang === 'en' ? 'Formula blackboard' : 'চকবোর্ড ও নাট্য নোট'}</li>
+            <li>{lang === 'en' ? 'Timber rostrum & brick flats' : 'রোস্ট্রাম ও পোড়া ইটের দেয়াল'}</li>
           </ul>
         </div>
       )}

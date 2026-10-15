@@ -28,8 +28,8 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
         </h2>
         <p className="max-w-2xl mx-auto text-sm sm:text-base text-[#9E9AA0] font-sans">
           {lang === 'en'
-            ? 'Presidential stewardship of the cultural magazine "Songskrriti Nagar" at Jahangirnagar University, coordinating creative teams, and organizing flagship campus festivals with thousands of participants.'
-            : 'জাহাঙ্গীরনগর বিশ্ববিদ্যালয় টিএসসি সাংস্কৃতিক পত্রিকা "সংস্কৃতি নগর"-এর নেতৃত্ব, লেখক ও প্রকাশনা দলের সমন্বয় এবং হাজারো শিক্ষার্থীর অংশগ্রহণে জাকসু রান ও সেন্ট্রাল ব্যাচ ফেস্টিভ্যালের সফল আয়োজন।'}
+            ? 'Presidential stewardship of the cultural publication "Songskrriti Nagar" at Jahangirnagar University, coordinating creative teams, and organizing flagship campus repertory theatre festivals.'
+            : 'জাহাঙ্গীরনগর বিশ্ববিদ্যালয় টিএসসি সাংস্কৃতিক পত্রিকা "সংস্কৃতি নগর"-এর নেতৃত্ব, লেখক ও প্রকাশনা দলের সমন্বয় এবং ১৮+ নাটকের কেন্দ্রীয় বার্ষিক নাট্যোৎসবের সফল আয়োজন।'}
         </p>
       </div>
 

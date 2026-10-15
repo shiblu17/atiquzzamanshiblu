@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, CheckCircle2, Code2 } from 'lucide-react';
+import { Send, CheckCircle2, Phone, Mail } from 'lucide-react';
 import type { Language } from '../types';
 import { soundManager } from '../lib/soundManager';
 
@@ -109,8 +109,8 @@ export const CurtainCall: React.FC<CurtainCallProps> = ({ lang }) => {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder={lang === 'en' ? 'e.g. Director / Prof. / Tech Lead' : 'যেমন: নাট্য পরিচালক / অধ্যাপক / প্রযুক্তিবিদ'}
-                  className="w-full px-4 py-2.5 rounded-xl bg-black/60 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#C9A24B] transition-colors"
+                  placeholder={lang === 'en' ? 'e.g. Director / Prof. / Tech Lead' : 'যেমন: নাট্য পরিচালক / অধ্যাপক / প্রযোজক'}
+                  className="w-full px-4 py-2.5 rounded-xl bg-black/60 border border-white/10 text-white placeholder-white/30 text-base sm:text-sm focus:outline-none focus:border-[#C9A24B] transition-colors"
                 />
               </div>
 
@@ -124,7 +124,7 @@ export const CurtainCall: React.FC<CurtainCallProps> = ({ lang }) => {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   placeholder="contact@domain.com"
-                  className="w-full px-4 py-2.5 rounded-xl bg-black/60 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#C9A24B] transition-colors"
+                  className="w-full px-4 py-2.5 rounded-xl bg-black/60 border border-white/10 text-white placeholder-white/30 text-base sm:text-sm focus:outline-none focus:border-[#C9A24B] transition-colors"
                 />
               </div>
 
@@ -135,7 +135,7 @@ export const CurtainCall: React.FC<CurtainCallProps> = ({ lang }) => {
                 <select
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl bg-black/80 border border-white/10 text-white text-sm focus:outline-none focus:border-[#C9A24B] transition-colors cursor-pointer"
+                  className="w-full px-4 py-2.5 rounded-xl bg-black/80 border border-white/10 text-white text-base sm:text-sm focus:outline-none focus:border-[#C9A24B] transition-colors cursor-pointer"
                 >
                   {subjectOptions.map((opt) => (
                     <option key={opt.value} value={opt.value} className="bg-[#1A1A1E]">
@@ -155,7 +155,7 @@ export const CurtainCall: React.FC<CurtainCallProps> = ({ lang }) => {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder={lang === 'en' ? 'Describe your project, production, or academic proposal...' : 'আপনার প্রস্তাবনা বা বার্তাটি লিখুন...'}
-                  className="w-full px-4 py-2.5 rounded-xl bg-black/60 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#C9A24B] transition-colors"
+                  className="w-full px-4 py-2.5 rounded-xl bg-black/60 border border-white/10 text-white placeholder-white/30 text-base sm:text-sm focus:outline-none focus:border-[#C9A24B] transition-colors"
                 />
               </div>
 
@@ -181,47 +181,46 @@ export const CurtainCall: React.FC<CurtainCallProps> = ({ lang }) => {
         <div className="md:col-span-5 space-y-4">
           <div className="text-left mb-2">
             <h3 className="font-serif-drama text-xl text-white">
-              {lang === 'en' ? 'Admission Tickets & Channels' : 'থিয়েটার টিকিট ও যোগাযোগ মাধ্যম'}
+              {lang === 'en' ? 'Admission Tickets & Channels' : 'থিয়েটার টিকিট ও সরাসরি যোগাযোগ'}
             </h3>
             <p className="text-xs text-[#9E9AA0] font-mono-code">
-              {lang === 'en' ? 'Hover tickets to tear/flip' : 'টিকিটের ওপর কার্সর নিন'}
+              {lang === 'en' ? 'Tap tickets to call or message' : 'সরাসরি যোগাযোগ করতে টিকিটে ট্যাপ করুন'}
             </p>
           </div>
 
-          {/* Social Ticket 1: Email Direct */}
+          {/* Social Ticket 1: Direct Phone Call / WhatsApp */}
           <a
-            href="mailto:atiquzzaman.shiblu.ju@gmail.com"
-            className="group block relative p-4 rounded-2xl bg-[#1A1A22] border border-[#C9A24B]/30 hover:border-[#C9A24B] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg shadow-black ticket-edge-left"
+            href="tel:+8801317982413"
+            className="group block relative p-4 rounded-2xl bg-[#1A1A22] border border-[#C9A24B]/30 hover:border-[#C9A24B] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg shadow-black ticket-edge-left active:scale-[0.98]"
           >
             <div className="flex items-center justify-between text-xs font-mono-code text-[#C9A24B] mb-1">
-              <span>ADMIT ONE · BACKSTAGE PASS</span>
-              <span className="font-bold">#JU52-DRAMA</span>
+              <span>DIRECT HOTLINE · ফোন ও হোয়াটসঅ্যাপ</span>
+              <span className="font-bold">#JU52-DIRECT</span>
             </div>
-            <h4 className="font-bold text-white text-sm group-hover:text-[#F5D37C] transition-colors">
-              atiquzzaman.shiblu.ju@gmail.com
+            <h4 className="font-bold text-white text-base group-hover:text-[#F5D37C] transition-colors flex items-center gap-2">
+              <Phone className="w-4 h-4 text-[#C9A24B] shrink-0" />
+              <span>{lang === 'en' ? '+880 1317-982413' : '০১৩১৭-৯৮২৪১৩'}</span>
             </h4>
             <p className="text-[11px] text-[#9E9AA0]">
-              {lang === 'en' ? 'Primary academic & performance correspondence' : 'প্রধান প্রাতিষ্ঠানিক ও নাট্য ইমেইল'}
+              {lang === 'en' ? 'Direct phone call, WhatsApp & theatrical collaboration' : 'সরাসরি ফোন কল, হোয়াটসঅ্যাপ ও নাট্য প্রযোজনা যোগাযোগ'}
             </p>
           </a>
 
-          {/* Social Ticket 2: GitHub */}
+          {/* Social Ticket 2: Email Direct */}
           <a
-            href="https://github.com/atiquzzaman-shiblu"
-            target="_blank"
-            rel="noreferrer"
-            className="group block relative p-4 rounded-2xl bg-[#1A1A22] border border-white/10 hover:border-[#4CC9F0] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg shadow-black ticket-edge-left"
+            href="mailto:atiquzzaman116592@gmail.com"
+            className="group block relative p-4 rounded-2xl bg-[#1A1A22] border border-[#4CC9F0]/30 hover:border-[#4CC9F0] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg shadow-black ticket-edge-left active:scale-[0.98]"
           >
             <div className="flex items-center justify-between text-xs font-mono-code text-[#4CC9F0] mb-1">
-              <span>TECH REPOSITORY · CONTROL BOOTH</span>
-              <span>GITHUB</span>
+              <span>PRIMARY CORRESPONDENCE · প্রধান ইমেইল</span>
+              <span>GMAIL</span>
             </div>
-            <h4 className="font-bold text-white text-sm group-hover:text-[#4CC9F0] transition-colors flex items-center gap-1.5">
-              <Code2 className="w-4 h-4" />
-              github.com/atiquzzaman-shiblu
+            <h4 className="font-bold text-white text-sm sm:text-base group-hover:text-[#4CC9F0] transition-colors flex items-center gap-2 break-all">
+              <Mail className="w-4 h-4 text-[#4CC9F0] shrink-0" />
+              <span>atiquzzaman116592@gmail.com</span>
             </h4>
             <p className="text-[11px] text-[#9E9AA0]">
-              {lang === 'en' ? 'Source code for Rehearsal OS & 3D stage tools' : 'মঞ্চায়ন অ্যাপ ও অটোমেশন সোর্স কোড'}
+              {lang === 'en' ? 'Academic discourse, scholarship & production inquiries' : 'উচ্চশিক্ষা, স্কলারশিপ ও প্রাতিষ্ঠানিক বার্তা'}
             </p>
           </a>
 
@@ -231,7 +230,7 @@ export const CurtainCall: React.FC<CurtainCallProps> = ({ lang }) => {
               <span>CAMPUS RESIDENCE</span>
               <span>SAVAR, DHAKA</span>
             </div>
-            <h4 className="font-bold text-white text-sm">
+            <h4 className="font-bold text-white text-sm sm:text-base">
               Jahangirnagar University
             </h4>
             <p className="text-[11px] text-[#9E9AA0]">

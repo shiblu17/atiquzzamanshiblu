@@ -2,15 +2,13 @@ import React from 'react';
 import { GlobeViewer } from '../components/GlobeViewer';
 import { academicVisionContent } from '../content/content';
 import type { Language } from '../types';
-import { FileDown, BookOpen } from 'lucide-react';
-import { soundManager } from '../lib/soundManager';
+import { BookOpen } from 'lucide-react';
 
 interface EpilogueProps {
   lang: Language;
-  onDownloadCV: () => void;
 }
 
-export const Epilogue: React.FC<EpilogueProps> = ({ lang, onDownloadCV }) => {
+export const Epilogue: React.FC<EpilogueProps> = ({ lang }) => {
   return (
     <section id="epilogue" className="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 z-10 text-left">
       {/* Section Header */}
@@ -65,18 +63,6 @@ export const Epilogue: React.FC<EpilogueProps> = ({ lang, onDownloadCV }) => {
                 </div>
               ))}
             </div>
-
-            {/* CV / Statement of Purpose Download Button */}
-            <button
-              onClick={() => {
-                soundManager.playTactileTick();
-                onDownloadCV();
-              }}
-              className="mt-6 w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-[#C9A24B] to-[#F5D37C] hover:from-[#F5D37C] hover:to-[#C9A24B] text-black font-mono-code text-xs sm:text-sm font-bold tracking-wider uppercase transition-all duration-300 shadow-xl flex items-center justify-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
-            >
-              <FileDown className="w-4 h-4 text-black" />
-              <span>{lang === 'en' ? 'Download Academic CV & Statement' : 'একাডেমিক সিভি ও স্টেটমেন্ট ডাউনলোড'}</span>
-            </button>
           </div>
         </div>
       </div>

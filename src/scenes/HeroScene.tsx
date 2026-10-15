@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FileDown, Mail, ArrowDown } from 'lucide-react';
+import { Mail, ArrowDown } from 'lucide-react';
 import type { Language } from '../types';
 import { soundManager } from '../lib/soundManager';
 
@@ -7,14 +7,12 @@ interface HeroSceneProps {
   lang: Language;
   onExplore: () => void;
   onContact: () => void;
-  onDownloadCV: () => void;
 }
 
 export const HeroScene: React.FC<HeroSceneProps> = ({
   lang,
   onExplore,
   onContact,
-  onDownloadCV,
 }) => {
   // Typewriter effect for tagline
   const taglinesEn = ['Actor.', 'Dramaturg.', 'Organiser.', 'Builder.'];
@@ -97,42 +95,30 @@ export const HeroScene: React.FC<HeroSceneProps> = ({
         )}
       </p>
 
-      {/* Action CTAs (PRD: Explore Works, Download CV, Contact) */}
-      <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
+      {/* Action CTAs (Explore Works & Contact Backstage) */}
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-16 w-full max-w-md sm:max-w-none">
         {/* CTA 1: Explore Works */}
         <button
           onClick={() => {
             soundManager.playCurtainSwish();
             onExplore();
           }}
-          className="group relative px-6 py-3.5 rounded-2xl bg-gradient-to-r from-[#B3122D] to-[#8C0E23] hover:from-[#E63550] hover:to-[#B3122D] text-white font-mono-code text-xs sm:text-sm font-semibold tracking-wider uppercase shadow-xl hover:shadow-[#B3122D]/40 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2 cursor-pointer border border-[#E63550]/40"
+          className="group relative w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-gradient-to-r from-[#B3122D] to-[#8C0E23] hover:from-[#E63550] hover:to-[#B3122D] text-white font-mono-code text-xs sm:text-sm font-semibold tracking-wider uppercase shadow-xl hover:shadow-[#B3122D]/40 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 cursor-pointer border border-[#E63550]/40"
         >
           <span>{lang === 'en' ? 'Explore Works' : 'কাজের বিবরণী'}</span>
           <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
         </button>
 
-        {/* CTA 2: Download CV */}
-        <button
-          onClick={() => {
-            soundManager.playTactileTick();
-            onDownloadCV();
-          }}
-          className="group px-6 py-3.5 rounded-2xl stage-glass-gold hover:bg-[#C9A24B] hover:text-black text-[#F4EFE6] font-mono-code text-xs sm:text-sm font-semibold tracking-wider uppercase transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2 cursor-pointer shadow-lg"
-        >
-          <FileDown className="w-4 h-4 text-[#C9A24B] group-hover:text-black transition-colors" />
-          <span>{lang === 'en' ? 'Download CV' : 'সিভি ডাউনলোড'}</span>
-        </button>
-
-        {/* CTA 3: Contact */}
+        {/* CTA 2: Contact */}
         <button
           onClick={() => {
             soundManager.playTactileTick();
             onContact();
           }}
-          className="px-6 py-3.5 rounded-2xl bg-black/60 hover:bg-white/10 text-[#F4EFE6] border border-white/15 font-mono-code text-xs sm:text-sm font-semibold tracking-wider uppercase transition-all duration-300 flex items-center gap-2 cursor-pointer"
+          className="group w-full sm:w-auto px-7 py-3.5 rounded-2xl stage-glass-gold hover:bg-[#C9A24B] hover:text-black text-[#F4EFE6] font-mono-code text-xs sm:text-sm font-semibold tracking-wider uppercase transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 cursor-pointer shadow-lg"
         >
-          <Mail className="w-4 h-4 text-[#4CC9F0]" />
-          <span>{lang === 'en' ? 'Curtain Call / Contact' : 'যোগাযোগ'}</span>
+          <Mail className="w-4 h-4 text-[#C9A24B] group-hover:text-black transition-colors" />
+          <span>{lang === 'en' ? 'Curtain Call / Contact' : 'যোগাযোগ ও সংলাপ'}</span>
         </button>
       </div>
 

@@ -186,10 +186,32 @@ export const GlobeViewer: React.FC<GlobeViewerProps> = ({ lang }) => {
       isDragging = false;
     };
 
+    // Mobile touch interaction
+    const onTouchStart = (e: TouchEvent) => {
+      if (e.touches.length === 1) {
+        isDragging = true;
+        prevMouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+      }
+    };
+    const onTouchMove = (e: TouchEvent) => {
+      if (!isDragging || e.touches.length !== 1) return;
+      const dx = e.touches[0].clientX - prevMouse.x;
+      const dy = e.touches[0].clientY - prevMouse.y;
+      globeGroup.rotation.y += dx * 0.008;
+      globeGroup.rotation.x += dy * 0.008;
+      prevMouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    };
+    const onTouchEnd = () => {
+      isDragging = false;
+    };
+
     const dom = renderer.domElement;
     dom.addEventListener('mousedown', onMouseDown);
     window.addEventListener('mousemove', onMouseMove);
     window.addEventListener('mouseup', onMouseUp);
+    dom.addEventListener('touchstart', onTouchStart, { passive: true });
+    dom.addEventListener('touchmove', onTouchMove, { passive: true });
+    dom.addEventListener('touchend', onTouchEnd);
 
     // Animation Loop
     let animId: number;
@@ -228,12 +250,15 @@ export const GlobeViewer: React.FC<GlobeViewerProps> = ({ lang }) => {
       dom.removeEventListener('mousedown', onMouseDown);
       window.removeEventListener('mousemove', onMouseMove);
       window.removeEventListener('mouseup', onMouseUp);
+      dom.removeEventListener('touchstart', onTouchStart);
+      dom.removeEventListener('touchmove', onTouchMove);
+      dom.removeEventListener('touchend', onTouchEnd);
       renderer.dispose();
     };
   }, []);
 
   return (
-    <div className="relative w-full h-[450px] sm:h-[500px] rounded-2xl overflow-hidden border border-[#4CC9F0]/25 bg-gradient-to-b from-[#0B0D14] via-[#0E0E12] to-[#0A0B0E] shadow-2xl">
+    <div className="relative w-full h-[340px] sm:h-[480px] rounded-2xl overflow-hidden border border-[#4CC9F0]/25 bg-gradient-to-b from-[#0B0D14] via-[#0E0E12] to-[#0A0B0E] shadow-2xl touch-pan-y">
       <div ref={containerRef} className="w-full h-full cursor-grab active:cursor-grabbing" />
 
       {/* Floating Route Badge */}
