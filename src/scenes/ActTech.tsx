@@ -36,8 +36,8 @@ export const ActTech: React.FC<ActTechProps> = ({ lang, onSelectDetail }) => {
         </h2>
         <p className="max-w-2xl mx-auto text-sm sm:text-base text-[#9E9AA0] font-sans">
           {lang === 'en'
-            ? 'Bridging theatrical spatial logic with full-stack web engineering, progressive web apps, campus IoT tracking architectures, and autonomous API pipelines.'
-            : 'থিয়েটারের অর্কেস্ট্রেশনকে রিয়্যাক্ট ফুলস্ট্যাক আর্কিটেকচার, ক্যাম্পাস জিপিএস ম্যাপিং এবং স্বয়ংক্রিয় নো-কোড/লো-কোড এপিআই পাইপলাইনের সাথে রূপান্তর।'}
+            ? 'Bridging theatrical spatial logic with full-stack web engineering, 3D WebGL scenography tools, responsive cultural platforms, and autonomous API pipelines.'
+            : 'থিয়েটারের স্থানিক অর্কেস্ট্রেশনকে রিয়্যাক্ট ও থ্রিজেএস ৩ডি সিনোগ্রাফি টুল, কালচারাল প্ল্যাটফর্ম এবং আধুনিক ক্লাউড আর্কিটেকচারের সাথে সমন্বয়।'}
         </p>
       </div>
 

@@ -4,7 +4,7 @@
 
 **Owner:** Atiquzzaman Shiblu  
 **Education:** Department of Drama & Dramatic Theory, Jahangirnagar University (52nd Batch)  
-**Leadership:** President, "Songskrriti Nagar" (TSC-Affiliated Newspaper)  
+**Leadership:** President, "Songskrriti Nagar" (TSC Cultural & Literature Publication)  
 **Target:** Master's in Theatre Studies / Performance (Trinity College Dublin, University of Galway)  
 
 ---
@@ -26,15 +26,15 @@ This portfolio is structured around a three-act theatrical journey with a persis
   - *Aar Koto Din* by Zahir Raihan: Projected-light reveal and anti-war dramaturgical adaptation.
   - *Bangladesh Shilpakala Academy:* Hanging stage flats detailing national repertory festival collaborations.
   - **1:12 Miniature Stage Set (Signature Showpiece):** Fully interactive 3D WebGL model of the vintage chemistry laboratory set. Allows 360° orbit, zoom, and an animated **"Exploded View"** decomposing the set components (fume extraction hood, distillation retort flasks, timber rostrum, formula blackboard, and test tube racks).
-- **Act II — Leadership, Journalism & Events:**
-  - *"Songskrriti Nagar" (সংস্কৃতি নগর):* 3D newspaper page that unfolds and flips to reveal editorial governance, investigative reporting, and 14 archived issues.
-  - *JUCSU Run 2026 & Batch Day Festival:* Event cards with verified counts: 2,500+ runners, 12 corporate brand sponsors, and 85 volunteer operations personnel.
-  - *Stakeholder Node Graph:* Interactive coordination diagram showing links between leadership, university administration, media writers, sponsors, and logistics teams.
+- **Act II — Cultural Leadership & Festival Direction:**
+  - *"Songskrriti Nagar" (সংস্কৃতি নগর):* 3D publication folio that unfolds to reveal cultural leadership, editorial curation, and campus theatre critiques.
+  - *JU Annual Theatre Festival & Studio Repertory Week:* 7-day campus repertory festival with verified metrics: 18+ plays, 4,500+ audience attendance, and 60+ stage crew/technicians.
+  - *Stakeholder Node Graph:* Interactive coordination diagram showing links between festival direction, repertory troupes, stage lighting rigs, directors, and cultural logistics teams.
 - **Act III — Technology & Automation:**
   - Stage control booth with DMX 512 lighting-console sliders activating project gain channels.
   - *Theatre Rehearsal Management System:* Full-stack React + Supabase web application streamlining call-sheets and availability matrices.
-  - *JU Campus Transit GPS Tracker:* Telemetry mapping architecture for university commuter buses.
-  - *Automated Workflow Pipelines:* No-code/low-code engines using Make.com, n8n, and Google Apps Script saving 120+ hours per event cycle.
+  - *Digital Scenography & 3D Stage Blocking Tool:* WebGL spatial staging CAD application for directors and scenographers to simulate proscenium blocking and sightlines.
+  - *Automated Workflow Pipelines:* No-code/low-code engines using Make.com, n8n, and Google Apps Script saving 120+ hours per production cycle.
   - **3D Skill Constellation:** Glowing point cloud clustering skills into Theatre (Red), Leadership (Gold), and Tech (Cyan), with an accessible 2D fallback list.
 - **Epilogue — Vision & Scholarship Goals:**
   - 3D interactive globe with illuminated flight trajectory arcs from **Dhaka (Jahangirnagar University)** across Eurasia to **Dublin (Trinity College Dublin)** and **Galway (University of Galway)**.

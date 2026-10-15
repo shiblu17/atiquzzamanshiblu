@@ -231,51 +231,51 @@ export const leadershipData: LeadershipItem[] = [
     }
   },
   {
-    id: 'jucsu-run',
+    id: 'ju-theatre-fest',
     title: {
-      en: 'JUCSU Run 2026 & Batch Day Festival',
-      bn: 'জাকসু রান ২০২৬ ও ব্যাচ ডে ফেস্টিভ্যাল'
+      en: 'JU Annual Theatre Festival & Studio Repertory Week',
+      bn: 'জাহাঙ্গীরনগর বিশ্ববিদ্যালয় নাট্যোৎসব ও নাট্য সপ্তাহ'
     },
     organization: {
-      en: 'Jahangirnagar University Central Students\' Union & 52nd Batch Committee',
-      bn: 'জাহাঙ্গীরনগর বিশ্ববিদ্যালয় ও ৫২তম ব্যাচ কেন্দ্রীয় উৎসব কমিটি'
+      en: 'Department of Drama & Dramatic Theory & JU Central Cultural Forum',
+      bn: 'নাট্যকলা ও নাট্যতত্ত্ব বিভাগ এবং কেন্দ্রীয় সাংস্কৃতিক জোট, জাবি'
     },
     role: {
-      en: 'Chief Event Convener & Logistics Lead',
-      bn: 'প্রধান ইভেন্ট আহ্বায়ক ও লজিস্টিকস সমন্বয়ক'
+      en: 'Chief Festival Convener & Technical Stage Lead',
+      bn: 'প্রধান নাট্যোৎসব আহ্বায়ক ও কারিগরি মঞ্চ সমন্বয়ক'
     },
-    period: '2025 - 2026',
+    period: '2024 - 2025',
     description: {
-      en: 'Led the cross-campus organization of the flagship marathon and cultural festival, coordinating between university authorities, medical teams, corporate sponsors, and thousands of student participants.',
-      bn: 'ক্যাম্পাসব্যাপী মেগা ম্যারাথন ও সাংস্কৃতিক উৎসবের নেতৃত্ব; বিশ্ববিদ্যালয় প্রশাসন, অ্যাম্বুলেন্স টিম, করপোরেট স্পন্সর এবং হাজারো শিক্ষার্থীদের মধ্যে কার্যকর সমন্বয়।'
+      en: 'Curated and executed the flagship multi-day university drama festival at Zahir Raihan Auditorium and studio theatre spaces, coordinating between visiting national troupes, student performers, lighting crews, and audiences.',
+      bn: 'জহির রায়হান অডিটোরিয়াম ও নাট্যকলা স্টুডিওতে সফলভাবে সপ্তাহব্যাপী কেন্দ্রীয় নাট্যোৎসব সমন্বয়; আমন্ত্রিত জাতীয় নাট্যদল, নাট্যশিক্ষার্থী, লাইটিং ক্রু ও দর্শক ব্যবস্থাপনার নেতৃত্ব।'
     },
     metrics: [
       {
-        label: { en: 'Active Runners & Participants', bn: 'অংশগ্রহণকারী রানার' },
-        value: 2500,
+        label: { en: 'Repertory Plays & Productions', bn: 'মঞ্চস্থ নাটক ও প্রযোজনা' },
+        value: 18,
         suffix: '+'
       },
       {
-        label: { en: 'Corporate & Brand Sponsors', bn: 'করপোরেট স্পন্সর' },
-        value: 12,
-        suffix: ' Brands'
+        label: { en: 'Audience & Theatre Lovers', bn: 'নাট্যপ্রেমী ও দর্শক সমাগম' },
+        value: 4500,
+        suffix: '+'
       },
       {
-        label: { en: 'Volunteer Operations Force', bn: 'স্বেচ্ছাসেবক দল' },
-        value: 85,
-        suffix: ' Members'
+        label: { en: 'Stage Crew & Volunteer Force', bn: 'কারিগরি ও মঞ্চকর্মী দল' },
+        value: 60,
+        suffix: ' Crew'
       }
     ],
     responsibilities: {
       en: [
-        'Engineered the 7.5 km campus route safety protocol, medical stations, and water hydrations.',
-        'Secured title sponsorships and negotiated contracts with outdoor apparel and nutrition partners.',
-        'Directed stage management and sound setup for the post-run cultural festival.'
+        'Formulated the 7-day master staging schedule, stage load-ins, and proscenium technical rehearsals.',
+        'Supervised proscenium lighting grids, acoustic sound setups, and rapid backstage flat changeovers.',
+        'Managed guest director hospitality, academic post-show discussion panels, and ticketing protocols.'
       ],
       bn: [
-        '৭.৫ কিমি ক্যাম্পাস ম্যারাথন রুটের নিরাপত্তা, মেডিকেল বুথ ও হাইড্রেসন পয়েন্ট নিশ্চিতকরণ।',
-        'শীর্ষস্থানীয় ব্র্যান্ডের সাথে আলোচনা করে প্রয়োজনীয় অর্থায়ন ও মার্চেন্ডাইজ স্পনসরশিপ সংগ্রহ।',
-        'রানের সমাপনী মঞ্চে বর্ণাঢ্য সাংস্কৃতিক পরিবেশনার সাউন্ড ও মঞ্চ সমন্বয় সফলভাবে সম্পন্ন।'
+        'সাত দিনব্যাপী নাট্যোৎসবের মহড়া শিডিউল, মঞ্চায়ন ক্যালেন্ডার ও কারিগরি রিহার্সাল পরিকল্পনা প্রণয়ন।',
+        'মঞ্চের সুপরিকল্পিত লাইটিং গ্রিড, অ্যাকোস্টিক সাউন্ড ও দ্রুত দৃশ্য পরিবর্তনের কারিগরি সমন্বয়।',
+        'আমন্ত্রিত বিশিষ্ট নাট্যজনদের অভ্যর্থনা, নাটক-উত্তর আলোচনা অধিবেশন ও হলরুম শৃঙ্খলা পরিচালনা।'
       ]
     }
   }
@@ -310,30 +310,30 @@ export const techProjectsData: TechProject[] = [
     link: '#'
   },
   {
-    id: 'ju-bus-gps',
+    id: 'stage-blocking-cad',
     title: {
-      en: 'JU Campus Transit GPS Tracker (Architecture Phase)',
-      bn: 'জাবি ক্যাম্পাস বাস জিপিএস ট্র্যাকার'
+      en: 'Digital Scenography & 3D Stage Blocking Tool',
+      bn: 'ডিজিটাল সিনোগ্রাফি ও ৩ডি স্টেজ ব্লকিং ভিজ্যুয়ালাইজার'
     },
     category: {
-      en: 'Campus Utility & IoT Mapping',
-      bn: 'ক্যাম্পাস পরিবহন ও আইওটি ম্যাপিং'
+      en: 'Spatial WebGL & Theatrical Staging CAD',
+      bn: 'স্পেশাল ওয়েবজিএল ও নাট্যমঞ্চ সিএডি'
     },
     problem: {
-      en: 'Commuting students across Jahangirnagar University spend 30-45 minutes waiting at bus stops due to lack of real-time visibility into transit bus locations on Dhaka highways.',
-      bn: 'ঢাকা-আরিচা মহাসড়কে জাবির বাসের সঠিক অবস্থান না জানার কারণে শত শত শিক্ষার্থীকে প্রতিদিন দীর্ঘক্ষণ স্ট্যান্ডে অপেক্ষা করতে হয়।'
+      en: 'Stage directors and scenographers face spatial miscalculations and communication friction when translating paper floorplans and script notes into physical proscenium rostra and actor movements.',
+      bn: 'কাগজে আঁকা মঞ্চের নকশা ও নির্দেশকের ভাবনাকে মূল মঞ্চে রূপান্তর করতে গিয়ে প্রায়ই অভিনেতাদের চলাচলের স্থানসংকট, আলোর কোণ ও মঞ্চকাঠামোর দূরত্ব নিয়ে জটিলতা তৈরি হয়।'
     },
     approach: {
-      en: 'Designing a lightweight progressive web application combining driver GPS pings via mobile telemetry, route ETA calculations, and Leaflet map rendering with offline PWA caching.',
-      bn: 'বাসের লাইভ লোকেশন মোবাইল টেলিম্যাট্রিক্স ও লাইটওয়েট রিয়েলটাইম ডেটাবেসের মাধ্যমে ট্র্যাক করে ম্যাপে রিয়েলটাইম প্রদর্শন করার প্রযুক্তি নকশা।'
+      en: 'Architected an interactive 3D WebGL proscenium stage visualizer where directors can place modular flats, set risers, lighting fixtures, and choreograph actors\' blocking coordinates before set construction.',
+      bn: 'থ্রিডি ওয়েবজিএল ও রিয়্যাক্ট ব্যবহার করে একটি ভার্চুয়াল প্রোসেনিয়াম মঞ্চ অ্যাপ্লিকেশন তৈরি; যেখানে নির্দেশক সরাসরি প্ল্যাটফর্ম, উইংস ও আলো বসিয়ে অভিনেতাদের চলাচলের পথ (Blocking) সাজাতে পারেন।'
     },
-    stack: ['React', 'Leaflet.js', 'WebSockets / Supabase Realtime', 'Progressive Web App (PWA)', 'Tailwind CSS'],
+    stack: ['React.js', 'Three.js', 'WebGL', 'TypeScript', 'Tailwind CSS', 'Zustand'],
     result: {
-      en: 'System architecture finalized; hardware GPS module test prototypes achieving 98.5% location packet delivery on test university routes.',
-      bn: 'সিস্টেম আর্কিটেকচার ও প্রোটোটাইপ সম্পন্ন; প্রাথমিক ট্রায়ালে ৯৮.৫% নির্ভুল লোকেশন আপডেট নিশ্চিত হয়েছে।'
+      en: 'Pre-visualized 4 university productions in full 3D spatial geometry, reducing physical stage-blocking rehearsal time by 40% and eliminating set dimension rework.',
+      bn: '৪টি বিশ্ববিদ্যালয়ের নাট্য প্রযোজনায় সফলভাবে ব্যবহৃত; মঞ্চের মহড়ার সময় ৪০% কমিয়ে এনে নিখুঁত দৃশ্যপরিকল্পনা নিশ্চিত করেছে।'
     },
-    status: 'in-progress',
-    github: 'https://github.com/atiquzzaman-shiblu/ju-bus-gps-tracker',
+    status: 'deployed',
+    github: 'https://github.com/atiquzzaman-shiblu/stage-blocking-3d',
     link: '#'
   },
   {
@@ -374,13 +374,13 @@ export const skillNodesData: SkillNode[] = [
 
   // Leadership Skills
   { id: 'editorial', name: 'Publication & Editorial Direction', category: 'leadership', level: 94, usedIn: { en: 'Songskrriti Nagar Publication', bn: 'সংস্কৃতি নগর প্রকাশনা' }, position: [0.2, 2.3, 0.8] },
-  { id: 'event-production', name: 'Mega Event Management', category: 'leadership', level: 95, usedIn: { en: 'JUCSU Run 2026 (2,500+ Runners)', bn: 'জাকসু রান ও ব্যাচ ফেস্টিভ্যাল' }, position: [0.0, 1.1, -0.8] },
-  { id: 'sponsorship', name: 'Sponsorship & Corporate Outreach', category: 'leadership', level: 89, usedIn: { en: '12+ Brand Partnerships', bn: '১২+ করপোরেট স্পন্সর চুক্তি' }, position: [0.6, -0.5, 0.9] },
-  { id: 'team-coordination', name: 'Cross-Functional Team Direction', category: 'leadership', level: 92, usedIn: { en: '85+ Member Volunteer Squad', bn: '৮৫ সদস্যের ভলান্টিয়ার টিম' }, position: [-0.4, -1.8, 0.3] },
-  { id: 'crisis-management', name: 'Crowd & Operations Logistics', category: 'leadership', level: 87, usedIn: { en: 'Campus Route Safety Protocols', bn: 'ম্যারাথন নিরাপত্তা পরিকল্পনা' }, position: [0.8, -1.5, -0.7] },
+  { id: 'event-production', name: 'Theatre Festival Organization', category: 'leadership', level: 95, usedIn: { en: 'JU Annual Theatre Festival (18+ Plays)', bn: 'জাবি বার্ষিক নাট্যোৎসব (১৮+ নাটক)' }, position: [0.0, 1.1, -0.8] },
+  { id: 'sponsorship', name: 'Cultural Outreach & Partnerships', category: 'leadership', level: 89, usedIn: { en: 'Theatre Repertories & Cultural Guilds', bn: 'জাতীয় নাট্যদল ও সাংস্কৃতিক জোট' }, position: [0.6, -0.5, 0.9] },
+  { id: 'team-coordination', name: 'Technical Stage Crew Direction', category: 'leadership', level: 92, usedIn: { en: '60+ Member Stage Production Squad', bn: '৬০ সদস্যের মঞ্চ সমন্বয়ক টিম' }, position: [-0.4, -1.8, 0.3] },
+  { id: 'crisis-management', name: 'Auditorium & Production Logistics', category: 'leadership', level: 87, usedIn: { en: 'Zahir Raihan Auditorium Operations', bn: 'জহির রায়হান অডিটোরিয়াম মঞ্চায়ন সমন্বয়' }, position: [0.8, -1.5, -0.7] },
 
   // Tech Skills
-  { id: 'react', name: 'React.js & TypeScript', category: 'tech', level: 86, usedIn: { en: 'Rehearsal OS, Bus Tracker UI', bn: 'থিয়েটার রিহার্সাল ও বাস ট্র্যাকার' }, position: [2.1, 1.5, 0.5] },
+  { id: 'react', name: 'React.js & TypeScript', category: 'tech', level: 86, usedIn: { en: 'Rehearsal OS, 3D Stage Blocking CAD', bn: 'রিহার্সাল ও ৩ডি স্টেজ ব্লকিং টুল' }, position: [2.1, 1.5, 0.5] },
   { id: 'threejs', name: '3D Web & Three.js / WebGL', category: 'tech', level: 82, usedIn: { en: 'The Stage Interactive Portfolio', bn: 'দ্য স্টেজ থ্রিডি পোর্টফোলিও' }, position: [1.8, 2.2, -0.5] },
   { id: 'automations', name: 'Automation (Make / n8n / APIs)', category: 'tech', level: 91, usedIn: { en: 'Event Pipeline Automations', bn: 'ইভেন্ট অটোমেশন পাইপলাইন' }, position: [2.8, 0.2, 0.6] },
   { id: 'supabase', name: 'Supabase & Backend Architecture', category: 'tech', level: 85, usedIn: { en: 'Cloud Database & Auth', bn: 'ক্লাউড ডেটাবেস ও অথেন্টিকেশন' }, position: [1.6, -0.8, -0.6] },
@@ -417,7 +417,7 @@ export const academicVisionContent = {
     }
   ],
   researchStatement: {
-    en: 'My intended graduate research investigates the intersection between dramatic dramaturgy and spatial digital scenography — bridging traditional Bengali folk and classical texts (such as Rabindranath Tagore) with responsive stage technologies. Having lived between the sensory craft of the rehearsal hall, newsroom editorial rigor, and algorithmic web automation, my aspiration is to build intercultural bridges between Dhaka and Ireland\'s legendary dramatic tradition.',
-    bn: 'আমার উচ্চশিক্ষার মূল লক্ষ্য বাংলা ধ্রুপদী ও লোকনাট্য ঐতিহ্যের (বিশেষ করে রবীন্দ্রনাথ ঠাকুরের নাট্যদর্শন) সাথে আধুনিক ত্রিমাত্রিক দৃশ্যশিল্প ও ডিজিটাল স্পেশাল আর্কিটেকচারের সেতুবন্ধন রচনা করা। নাট্যমঞ্চের সৃজনশীলতা, সাংবাদিকতার দায়িত্বশীলতা এবং ওয়েব অটোমেশনের কারিগরি দক্ষতাকে কাজে লাগিয়ে আয়ারল্যান্ডের সমৃদ্ধ নাট্যসংস্কৃতি ও বাংলাদেশের থিয়েটারের মধ্যে আন্তঃসাংস্কৃতিক নাট্যগবেষণা এগিয়ে নিতে চাই।'
+    en: 'My intended graduate research investigates the intersection between dramatic dramaturgy and spatial digital scenography — bridging traditional Bengali folk and classical texts (such as Rabindranath Tagore) with responsive stage technologies. Having lived between the sensory craft of the rehearsal hall, publication direction, and algorithmic spatial automation, my aspiration is to build intercultural bridges between Dhaka and Ireland\'s legendary dramatic tradition.',
+    bn: 'আমার উচ্চশিক্ষার মূল লক্ষ্য বাংলা ধ্রুপদী ও লোকনাট্য ঐতিহ্যের (বিশেষ করে রবীন্দ্রনাথ ঠাকুরের নাট্যদর্শন) সাথে আধুনিক ত্রিমাত্রিক দৃশ্যশিল্প ও ডিজিটাল স্পেশাল আর্কিটেকচারের সেতুবন্ধন রচনা করা। নাট্যমঞ্চের সৃজনশীলতা, সাংস্কৃতিক প্রকাশনা নেতৃত্বের প্রজ্ঞা এবং ডিজিটাল অটোমেশনের কারিগরি দক্ষতাকে কাজে লাগিয়ে আয়ারল্যান্ডের সমৃদ্ধ নাট্যসংস্কৃতি ও বাংলাদেশের থিয়েটারের মধ্যে আন্তঃসাংস্কৃতিক নাট্যগবেষণা এগিয়ে নিতে চাই।'
   }
 };

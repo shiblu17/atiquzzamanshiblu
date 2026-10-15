@@ -30,7 +30,7 @@ export const CVDownloadModal: React.FC<CVDownloadModalProps> = ({ isOpen, onClos
     const content = `==================================================================
 CURRICULUM VITAE: ATIQUZZAMAN SHIBLU
 Department of Drama & Dramatic Theory, Jahangirnagar University (52nd Batch)
-President, "Songskrriti Nagar" (TSC-Affiliated Newspaper)
+President, "Songskrriti Nagar" (TSC Cultural & Literature Publication)
 Target Objective: Master's in Theatre Studies & Performance (Trinity College Dublin / University of Galway)
 Contact: atiquzzaman.shiblu.ju@gmail.com | github.com/atiquzzaman-shiblu
 ==================================================================
@@ -51,16 +51,16 @@ Contact: atiquzzaman.shiblu.ju@gmail.com | github.com/atiquzzaman-shiblu
 - 1:12 Miniature Stage Set: Vintage Chemistry Laboratory
   Role: Lead Scenographer & Scale Modeller (Blender 3D + Handcrafted Balsa & Etched Brass)
 
-3. EDITORIAL LEADERSHIP & CAMPUS GOVERNANCE
-- President & Editor-in-Chief, "Songskrriti Nagar" (TSC Newspaper)
-  Led 35 staff journalists, published 14 investigative issues, reached 18,000+ readers.
-- Chief Event Convener, JUCSU Run 2026 & Batch Day Festival
-  Coordinated 2,500+ runners, 12 corporate brand sponsors, 85-member volunteer operations squad.
+3. CULTURAL LEADERSHIP & FESTIVAL DIRECTION
+- President, "Songskrriti Nagar" (TSC Cultural & Literature Publication)
+  Executive direction and publication management; curated cultural essays, theatrical reviews, and print folios for the campus cultural sphere.
+- Chief Convener & Technical Stage Lead, JU Annual Theatre Festival & Studio Repertory Week
+  Spearheaded 7-day campus repertory festival: 18+ plays, 4,500+ audience attendance, and coordinated 60+ stage crew, lighting technicians, and sound designers.
 
-4. TECHNOLOGY & WEB ARCHITECTURES
+4. TECHNOLOGY & THEATRICAL DIGITAL TOOLS
 - Theatre Rehearsal Management System (React, Supabase, Tailwind, TypeScript)
-- JU Campus Transit GPS Tracker (Mobile telemetry, WebSockets, real-time bus map)
-- Autonomous Workflow Pipelines (Make.com, n8n, Google Apps Script, REST APIs)
+- Digital Scenography & 3D Stage Blocking Visualizer (Three.js, WebGL, React, Spatial Geometry)
+- Autonomous Theatrical Workflow Pipelines (Make.com, n8n, Google Apps Script, REST APIs)
 
 5. RESEARCH ASPIRATIONS (IRELAND GRADUATE STUDIES)
 - Investigating the convergence of traditional Bengali dramatic forms (Tagore) with contemporary European scenographic technologies at Trinity College Dublin (The Lir Academy) and University of Galway.

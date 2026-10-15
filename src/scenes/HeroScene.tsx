@@ -87,12 +87,12 @@ export const HeroScene: React.FC<HeroSceneProps> = ({
         {lang === 'en' ? (
           <>
             Department of Drama & Dramatic Theory, <strong className="text-[#C9A24B]">Jahangirnagar University</strong> (52nd Batch) ·{' '}
-            President, <span className="text-[#F5D37C]">Songskrriti Nagar</span> (TSC Newspaper).
+            President, <span className="text-[#F5D37C]">Songskrriti Nagar</span> (TSC Cultural Publication).
           </>
         ) : (
           <>
             নাট্যকলা ও নাট্যতত্ত্ব বিভাগ, <strong className="text-[#C9A24B]">জাহাঙ্গীরনগর বিশ্ববিদ্যালয়</strong> (৫২তম ব্যাচ) ·{' '}
-            সভাপতি, <span className="text-[#F5D37C]">সংস্কৃতি নগর</span> (টিএসসি-অনুমোদিত পত্রিকা)।
+            সভাপতি, <span className="text-[#F5D37C]">সংস্কৃতি নগর</span> (টিএসসি-অনুমোদিত সাংস্কৃতিক প্রকাশনা)।
           </>
         )}
       </p>

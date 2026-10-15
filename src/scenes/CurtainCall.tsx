@@ -221,7 +221,7 @@ export const CurtainCall: React.FC<CurtainCallProps> = ({ lang }) => {
               github.com/atiquzzaman-shiblu
             </h4>
             <p className="text-[11px] text-[#9E9AA0]">
-              {lang === 'en' ? 'Source code for Rehearsal OS & transit systems' : 'ওয়েব অ্যাপ ও অটোমেশন সোর্স কোড'}
+              {lang === 'en' ? 'Source code for Rehearsal OS & 3D stage tools' : 'মঞ্চায়ন অ্যাপ ও অটোমেশন সোর্স কোড'}
             </p>
           </a>
 

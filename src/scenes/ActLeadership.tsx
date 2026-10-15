@@ -9,11 +9,11 @@ interface ActLeadershipProps {
 }
 
 export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
-  const [activeTab, setActiveTab] = useState<'newspaper' | 'jucsu' | 'network'>('newspaper');
+  const [activeTab, setActiveTab] = useState<'newspaper' | 'theatrefest' | 'network'>('newspaper');
   const [isPaperFlipped, setIsPaperFlipped] = useState(false);
 
   const tscNewspaper = leadershipData.find((l) => l.id === 'tsc-newspaper');
-  const jucsuRun = leadershipData.find((l) => l.id === 'jucsu-run');
+  const juTheatreFest = leadershipData.find((l) => l.id === 'ju-theatre-fest');
 
   return (
     <section id="act-leadership" className="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 z-10 text-left">
@@ -53,16 +53,16 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
         <button
           onClick={() => {
             soundManager.playTactileTick();
-            setActiveTab('jucsu');
+            setActiveTab('theatrefest');
           }}
           className={`px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-mono-code transition-all duration-300 flex items-center gap-2 cursor-pointer ${
-            activeTab === 'jucsu'
+            activeTab === 'theatrefest'
               ? 'bg-[#C9A24B] text-black font-bold shadow-lg shadow-[#C9A24B]/20'
               : 'stage-glass text-[#F4EFE6]/70 hover:text-white'
           }`}
         >
           <Award className="w-4 h-4" />
-          <span>{lang === 'en' ? 'JUCSU Run & Batch Festival' : 'জাকসু রান ও ব্যাচ ফেস্টিভ্যাল'}</span>
+          <span>{lang === 'en' ? 'JU Theatre Festival Week' : 'জাবি বার্ষিক নাট্যোৎসব সপ্তাহ'}</span>
         </button>
 
         <button
@@ -216,28 +216,28 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
         </div>
       )}
 
-      {/* Tab 2: JUCSU Run 2026 & Batch Day Festival Carousel (PRD Act II) */}
-      {activeTab === 'jucsu' && jucsuRun && (
+      {/* Tab 2: JU Annual Theatre Festival & Studio Repertory Week */}
+      {activeTab === 'theatrefest' && juTheatreFest && (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-6 space-y-4">
             <span className="px-3 py-1 rounded-full text-xs font-mono-code bg-[#C9A24B]/20 border border-[#C9A24B]/50 text-[#F5D37C]">
-              {jucsuRun.period}
+              {juTheatreFest.period}
             </span>
             <h3 className="font-serif-drama text-2xl sm:text-4xl text-white">
-              {jucsuRun.title[lang]}
+              {juTheatreFest.title[lang]}
             </h3>
             <p className="text-xs font-mono-code text-[#4CC9F0]">
-              {jucsuRun.organization[lang]}
+              {juTheatreFest.organization[lang]}
             </p>
             <p className="text-sm text-[#F4EFE6]/85 leading-relaxed">
-              {jucsuRun.description[lang]}
+              {juTheatreFest.description[lang]}
             </p>
 
             <div className="space-y-2 pt-2">
               <h4 className="text-xs font-mono-code uppercase text-[#9E9AA0] font-bold">
-                {lang === 'en' ? 'Core Logistics & Responsibilities:' : 'লজিস্টিকস ও পরিচালনা:'}
+                {lang === 'en' ? 'Core Staging Logistics & Leadership:' : 'মঞ্চায়ন ও পরিচালনা রূপরেখা:'}
               </h4>
-              {jucsuRun.responsibilities[lang].map((r, idx) => (
+              {juTheatreFest.responsibilities[lang].map((r, idx) => (
                 <div key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[#F4EFE6]/80">
                   <CheckCircle2 className="w-4 h-4 text-[#C9A24B] shrink-0 mt-0.5" />
                   <span>{r}</span>
@@ -246,15 +246,15 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
             </div>
           </div>
 
-          {/* Carousel Cylinder Stats Cards */}
+          {/* Festival Scale & Animated Metrics */}
           <div className="lg:col-span-6 space-y-4">
             <div className="p-6 sm:p-8 rounded-3xl stage-glass-gold border border-[#C9A24B]/40 shadow-2xl">
               <h4 className="text-xs font-mono-code uppercase tracking-wider text-[#9E9AA0] mb-4">
-                {lang === 'en' ? 'Event Scale & Animated Metrics' : 'ইভেন্টের বিস্তার ও পরিসংখ্যান'}
+                {lang === 'en' ? 'Festival Scale & Production Metrics' : 'উৎসবের বিস্তার ও মঞ্চায়ন পরিসংখ্যান'}
               </h4>
 
               <div className="space-y-4">
-                {jucsuRun.metrics.map((m, idx) => (
+                {juTheatreFest.metrics.map((m, idx) => (
                   <div
                     key={idx}
                     className="p-4 rounded-xl bg-black/60 border border-white/10 flex items-center justify-between"
@@ -264,7 +264,7 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
                         {m.label[lang]}
                       </span>
                       <span className="text-xs text-[#C9A24B]">
-                        {lang === 'en' ? 'Verified Official JUCSU Count' : 'অফিসিয়াল জাকসু নথিভুক্ত'}
+                        {lang === 'en' ? 'Departmental Festival Record' : 'বিভাগীয় নাট্যোৎসব নথিভুক্ত'}
                       </span>
                     </div>
                     <div className="text-right">
@@ -277,8 +277,8 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
               </div>
 
               <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono-code text-[#9E9AA0]">
-                <span>{lang === 'en' ? 'Role: Chief Event Convener' : 'পদ: প্রধান ইভেন্ট আহ্বায়ক'}</span>
-                <span className="text-[#52B788] font-bold">● {lang === 'en' ? 'Completed 100%' : 'সম্পূর্ণ সফল'}</span>
+                <span>{lang === 'en' ? 'Role: Chief Festival Convener' : 'পদ: প্রধান নাট্যোৎসব আহ্বায়ক'}</span>
+                <span className="text-[#52B788] font-bold">● {lang === 'en' ? '7-Day Repertory Complete' : '৭ দিনব্যাপী সফল মঞ্চায়ন'}</span>
               </div>
             </div>
           </div>
@@ -327,11 +327,11 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
                 <text textAnchor="middle" y="4" fill="#FFF" fontSize="10" fontFamily="monospace">JU Admin</text>
               </g>
 
-              {/* Node 2: Corporate Sponsors */}
+              {/* Node 2: Repertory Troupes */}
               <g transform="translate(140, 90)">
                 <circle r="30" fill="#1A1A22" stroke="#C9A24B" strokeWidth="2" />
-                <text textAnchor="middle" y="-2" fill="#FFF" fontSize="10" fontWeight="bold">12+ Brands</text>
-                <text textAnchor="middle" y="12" fill="#C9A24B" fontSize="8" fontFamily="monospace">Sponsors</text>
+                <text textAnchor="middle" y="-2" fill="#FFF" fontSize="10" fontWeight="bold">18+ Troupes</text>
+                <text textAnchor="middle" y="12" fill="#C9A24B" fontSize="8" fontFamily="monospace">Repertory</text>
               </g>
 
               {/* Node 3: Editorial Board */}
@@ -341,17 +341,17 @@ export const ActLeadership: React.FC<ActLeadershipProps> = ({ lang }) => {
                 <text textAnchor="middle" y="12" fill="#E63550" fontSize="8" fontFamily="monospace">Editorial</text>
               </g>
 
-              {/* Node 4: Volunteer Operations */}
+              {/* Node 4: Stage Technical Riggers */}
               <g transform="translate(140, 270)">
                 <circle r="30" fill="#1A1A22" stroke="#4CC9F0" strokeWidth="2" />
-                <text textAnchor="middle" y="-2" fill="#FFF" fontSize="10" fontWeight="bold">85 Members</text>
-                <text textAnchor="middle" y="12" fill="#4CC9F0" fontSize="8" fontFamily="monospace">Logistics</text>
+                <text textAnchor="middle" y="-2" fill="#FFF" fontSize="10" fontWeight="bold">60+ Crew</text>
+                <text textAnchor="middle" y="12" fill="#4CC9F0" fontSize="8" fontFamily="monospace">Stage Rig</text>
               </g>
 
-              {/* Node 5: Cultural Artists */}
+              {/* Node 5: Cultural Artists & Directors */}
               <g transform="translate(460, 270)">
                 <circle r="30" fill="#1A1A22" stroke="#52B788" strokeWidth="2" />
-                <text textAnchor="middle" y="-2" fill="#FFF" fontSize="10" fontWeight="bold">Stage Crew</text>
+                <text textAnchor="middle" y="-2" fill="#FFF" fontSize="10" fontWeight="bold">Directors</text>
                 <text textAnchor="middle" y="12" fill="#52B788" fontSize="8" fontFamily="monospace">Artists</text>
               </g>
             </svg>
